@@ -4,6 +4,11 @@ namespace CarLotSimulator;
 
 public class Car
 {
+    public Car()
+    {
+        CarLot.NumberOfCars++;
+    }
+    
     public int Year { get; set; }
     public string Make { get; set; }
     public string Model { get; set; }

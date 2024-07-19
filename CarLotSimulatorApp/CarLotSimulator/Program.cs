@@ -25,6 +25,7 @@ namespace CarLotSimulator
             var cars = new CarLot();
             
             Car firstCar = new Car();
+            Console.WriteLine($"After creating first car, number of cars in lot is: {CarLot.NumberOfCars}");
             firstCar.Year = 2020;
             firstCar.Make = "Toyota";
             firstCar.Model = "Corolla";
@@ -33,7 +34,7 @@ namespace CarLotSimulator
             firstCar.IsDrivable = false;
 
             cars.CarList.Add(firstCar);
-            
+
             Car secondCar = new Car()
             {
                 Year = 2023,
@@ -44,6 +45,7 @@ namespace CarLotSimulator
                 IsDrivable = true,
             };
             
+            Console.WriteLine($"After creating second car, number of cars in lot is: {CarLot.NumberOfCars}");
             cars.CarList.Add(secondCar);
 
             var thirdCar = new Car()
@@ -55,6 +57,7 @@ namespace CarLotSimulator
                 HonkNoise = "Blare",
                 IsDrivable = true,
             };
+            Console.WriteLine($"After creating third car, number of cars in lot is: {CarLot.NumberOfCars}");
             
             cars.CarList.Add(thirdCar);
             
